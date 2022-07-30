@@ -1,0 +1,9 @@
+*{
+    background-color: rgb(142, 250, 10);
+}
+.mango{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+}
