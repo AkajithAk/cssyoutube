@@ -1,9 +1,42 @@
-*{
-    background-color: rgb(142, 250, 10);
+body{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
-.mango{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 150px;
+.main{
+  display: flex;
+}
+.card{
+  height: 300px;
+  width: 300px;
+  perspective: 1000px;
+  margin: 30px;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .container{
+  transform: rotateY(180deg);
+}
+.front , .back{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.back{
+  transform: rotateY(180deg);
+  background-color: rgb(42, 120, 142);
+  color: white;
+  text-align: center;
+  border-radius: 40px;
+}
+h1{
+  padding: 30px;
+}
+img{
+  border-radius: 40px;
 }
