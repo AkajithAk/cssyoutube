@@ -1,0 +1,12 @@
+#progress{
+  height: 7px;
+  width: 0%;
+  position: fixed;
+  background-color: rgb(1, 84, 84);
+  margin-top: 10px;
+}
+body{
+  height: 1600px;
+  width: 100%;
+  background: rgb(168, 245, 245);
+}
