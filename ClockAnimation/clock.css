@@ -1,0 +1,31 @@
+body{
+    margin: 20%;
+}
+.clock{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border:4px solid;
+    box-sizing: content-box;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    top: 9px;
+    left: 43px;
+    background: black;
+    border-radius: 2px;
+    transform-origin: 2px 35px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
